@@ -6,23 +6,22 @@
     <title>Unity WebGL Player | Test_Avi</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
-<script type="text/javascript">
-  function detectPlatform() {
-      let userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-      if (/android/i.test(userAgent)) {
-          console.log("Platform: Mobile (Android)");
-      } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-          console.log("Platform: Mobile (iOS)");
-      } else {
-          console.log("Platform: Desktop");
+    <script type="text/javascript">
+      function detectPlatform() {
+          let userAgent = navigator.userAgent || navigator.vendor || window.opera;
+    
+          if (/android/i.test(userAgent)) {
+              console.log("Platform: Mobile (Android)");
+          } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+              console.log("Platform: Mobile (iOS)");
+          } else {
+              console.log("Platform: Desktop");
+          }
       }
-  }
-</script>
-
-  </head>
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://zlengos.github.io https://*;">
-
+    </script>
+    
+      </head>
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; connect-src 'self' https://zlengos.github.io https://*;">
   <body>
     <div id="unity-container" class="unity-desktop">
       <canvas id="unity-canvas" width=1 height=1 tabindex="-1"></canvas>
